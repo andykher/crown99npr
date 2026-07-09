@@ -1,0 +1,1258 @@
+<html><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="https://www.tiongnam.com/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.tiongnam.com/assets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.tiongnam.com/assets/plugins/datatables/datatables.min.css">
+<link rel="stylesheet" href="https://www.tiongnam.com/assets/plugins/owl.carousel.2/css/owl.carousel.css">
+<link rel="stylesheet" href="https://www.tiongnam.com/assets/plugins/custom-scrollbar/simple-scrollbar.css">
+<link rel="stylesheet" href="https://www.tiongnam.com/assets/plugins/select2/select2.min.css">
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="https://www.tiongnam.com/assets/css/animate.css">
+<link rel="stylesheet" href="https://www.tiongnam.com/assets/css/style.css">
+<style>
+.ftcolor-primary{ color:rgb(220,128,0); }.ftcolor-secondary{ color:rgb(100,51,52); }.ftcolor-tertiary{ color:rgb(196,0,50); }.ftcolor-forth{ color:rgb(236,201,36); }.ftcolor-black{ color:#000000; }.ftcolor-white{ color:#ffffff; }.ftcolor-success{ color:#1c84c6; }.ftcolor-info{ color:#23c6c8; }.ftcolor-warning{ color:#f8ac59; }.ftcolor-danger{ color:#ed5565; }.bgcolor-primary{ background-color:rgb(220,128,0); }.bgcolor-secondary{ background-color:rgb(100,51,52); }.bgcolor-tertiary{ background-color:rgb(196,0,50); }.bgcolor-forth{ background-color:rgb(236,201,36); }.bgcolor-black{ background-color:#000000; }.bgcolor-white{ background-color:#ffffff; }.bgcolor-success{ background-color:#1c84c6; }.bgcolor-info{ background-color:#23c6c8; }.bgcolor-warning{ background-color:#f8ac59; }.bgcolor-danger{ background-color:#ed5565; }.bdcolor-primary{ border-color:rgb(220,128,0); }.bdcolor-secondary{ border-color:rgb(100,51,52); }.bdcolor-tertiary{ border-color:rgb(196,0,50); }.bdcolor-forth{ border-color:rgb(236,201,36); }.bdcolor-black{ border-color:#000000; }.bdcolor-white{ border-color:#ffffff; }.bdcolor-success{ border-color:#1c84c6; }.bdcolor-info{ border-color:#23c6c8; }.bdcolor-warning{ border-color:#f8ac59; }.bdcolor-danger{ border-color:#ed5565; }
+.no-padding {
+	padding:0;
+}
+.no-margin {
+	margin:0;
+}
+br.constant {
+	display:block!important;
+}
+
+
+.theme-config {
+	display:none;
+}
+.deco-line { 
+	height:6px; 
+}
+.navbar-toggle {
+	background-color:transparent;
+}
+.top-navigation .nav:after {
+	display:none;
+}
+.top-navigation .nav > li a {
+	padding-top:12px;
+	padding-bottom:18px;
+	font-size:15px;
+	font-weight:normal;
+	font-family:'Georgia';
+	color:#fff!important;
+	background-color:rgb(220,128,0)!important;
+}
+.top-navigation .nav > li.active>a {
+	font-weight:600;
+	box-shadow:0 -5px 0 0 rgb(100,51,52) inset!important;
+}
+
+.dropdown-menu {
+	border:none!important;
+}
+.top-navigation .dropdown-menu > li > a {
+	border-radius:0;
+	color:rgb(100,51,52)!important;
+	background-color:#fff!important;
+	padding-top:5px!important;
+	padding-bottom:5px!important;
+	padding-right:20px!important;
+}
+.dropdown-menu {
+	min-width:200px;
+}
+.dropdown-menu > li:first-child > a {
+	box-shadow:0 -5px 0 0 rgb(100,51,52)!important;
+	padding-top:12px!important;
+}
+.dropdown-menu > li:last-child > a {
+	padding-bottom:15px!important;
+}
+.dropdown-menu>li.active>a {
+	color:rgb(220,128,0)!important;
+	font-weight:normal!important;
+}
+.dropdown-menu>li:hover>a {
+	color:rgb(220,128,0)!important;
+	font-weight:normal!important;
+}
+
+.submenu {
+	-ms-transform: translate3d(200px,-42px,0px)!important; /* IE 9 */
+  transform: translate3d(200px,-42px,0px)!important; /* Standard syntax */
+}
+
+.title-main {
+	font-family:'Georgia';
+	font-size:20px;
+	font-weight:bold;
+	padding:0 40px;
+	color:#fff;
+}
+.directory {
+	font-family:'open sans';
+	font-size:16px;
+	font-weight:600;
+	color:#fff;
+	padding-top:26px;
+	padding-right:10px;
+	text-align:right;
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+button.back-to-top {
+	background-color:rgb(220,128,0);
+	color:#fff;
+	width:50px;
+	height:50px;
+	outline:none;
+	border:none;
+	box-shadow:0 0 15px 6px rgba(0,0,0,0.2);
+	margin-left:10px;
+}
+
+#footer>.row {
+	max-width:1600px;
+	padding:0 40px;
+	margin:40px auto 15px;
+	color:#fff;
+	font-size:14px;
+	font-family:'Georgia';
+	line-height:1.3;
+}
+#footer .box-center {
+	display:inline-block;
+	text-align:left;
+}
+#footer .title {
+	font-size:16px;
+	font-weight:bold;
+	color:rgb(220,128,0);
+	margin-bottom:10px;
+}
+#footer a {
+	color:#fff;
+	line-height:1.8;
+}
+
+@media screen and (min-width: 601px) {
+	ul.nav li.dropdown:hover > ul.dropdown-menu {
+  display: block;    
+}
+}
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+	.deco-line { 
+		height:4px;
+	}
+	ul.nav {
+		margin-top:0!important;
+	}
+	.top-navigation .navbar-right {
+		margin-right:-15px;
+	}
+	.top-navigation .nav > li.active a {
+		box-shadow:none!important;
+		background-color:#fff!important;
+	}
+	.top-navigation .nav > li.active>a {
+		box-shadow:none!important;
+		background-color:rgb(100,51,52)!important;
+	}
+	
+	nav.navbar, .navbar-brand {
+		height:50px!important;
+	}
+	.navbar-brand {
+		padding:10px!important;
+	}
+	.navbar-brand img {
+		height:30px!important;
+	}
+	.dropdown-menu > li > a > br {
+		display:none;
+	}
+	.title-main {
+		font-size:20px;
+		padding:0 15px;
+	}
+	.directory {
+		text-align:left;
+		font-size:14px;
+		padding-top:10px;
+	}
+
+	#footer>.row {
+		padding:15px;
+	}
+	#footer>.row>div {
+		text-align:left!important;
+	}
+	.navbar-brand img {
+		margin-top:0!important;
+	}
+
+}
+
+
+</style>		<style>
+		.carousel .item img {
+			object-fit:cover;
+			width:100%;
+			min-height:300px;
+		}
+		.carousel .item img.sp {
+			object-position:bottom;
+		}
+		.carousel .item .img-cover {
+			background-color:rgba(100,51,53,0.35);
+			width:100%;
+			height:100%;
+			position:absolute;
+			z-index:100;
+			top:0;
+		}
+		.carousel .item .img-cover .tb-layout {
+			width:100%;
+			height:100%;
+			display:table;
+			table-layout:fixed;
+		}
+		.carousel .item .img-cover .vcenter {
+			display:table-cell;
+			vertical-align:middle;
+			padding-bottom:20px;
+		}
+		.carousel .item .img-cover .vcenter .more-btn {
+			background-color:rgb(220,128,0);
+			color:#fff;
+			outline:none;
+			border:none;
+			font-size:16px;
+			font-weight:bold;
+			padding:8px 30px;
+		}
+		.box-sp {
+			display:inline-block;
+			color:#fff;
+			font-size:40px;
+			font-family:'Georgia';
+			font-weight:bold;
+			line-height:1.2;
+			padding:30px 80px 50px 120px;
+			background-color:rgba(100,51,53,0.9);
+		}
+		.carousel .owl-controls {
+			width:100%;
+			text-align:center;
+			padding:0;
+			margin-top:-40px;
+			position:absolute;
+		}
+		.carousel .owl-dots {
+			display:inline-block;
+		}
+		.carousel .owl-dot {
+			display:inline-block;
+			background-color:rgb(100,51,52);
+			opacity:0.5;
+			margin:0 6px;
+			width:40px;
+			height:5px;
+			cursor:pointer;
+			transition:color 0.2 ease-in-out;
+		}
+		.carousel .owl-dot.active {
+			background-color:rgb(100,51,52)!important;
+			opacity:1;
+		}
+		.services {
+			background-color:#fff;
+			max-width:1600px;
+			margin:25px auto;
+			padding:0 30px;
+		}
+		.box-img img {
+			object-fit:cover;
+			width:calc(100% - 20px);
+			height:calc(100% - 20px);
+			min-height:150px;
+			margin:10px;
+		}
+		.box-desc {
+			padding:60px 25px!important;
+		}
+		.box-desc:nth-child(odd) {
+			padding:60px 80px 60px 120px;
+		}
+		.box-desc .title-1 {
+			display:none;
+			font-size:18px;
+			padding-left:26px;
+			color:rgb(220,128,0);
+		}
+		.box-desc .title-2 {
+			font-size:28px;
+			font-weight:bold;
+			font-family:'Georgia';
+			line-height:1.2;
+			padding-left:20px;
+			margin:4px 0;
+			color:rgb(100,51,52);
+		}
+		.box-desc .square-box {
+			position:absolute;
+			display:inline-block;
+			width:10px;
+			height:10px;
+			background-color:rgb(220,128,0);
+			margin-top:15px;
+			margin-left:-20px;
+		}
+		.box-desc .desc {
+			padding-top:14px;
+			font-size:16px;
+			font-family:'Georgia';
+			line-height:1.2;
+			color:rgb(100,51,52);
+		}
+		.box-desc .more-btn {
+			background-color:rgb(220,128,0);
+			color:#fff;
+			outline:none;
+			border:none;
+			font-size:15px;
+			font-weight:bold;
+			padding:10px 46px;
+			margin-top:36px;
+		}
+		.box-desc .more-btn:hover, .carousel .item .img-cover .vcenter .more-btn:hover {
+			box-shadow:0 0 0 100px rgba(0,0,0,0.2) inset;
+		}
+		.box-scroll {
+			font-family:'Georgia';
+			font-size:14px;
+			max-height:340px;
+			direction:rtl;
+			text-align:left;
+			margin-left:28px;
+		}
+		.box-scroll::before {
+			position:absolute;
+			display:block;
+			content:'';
+			width:4px;
+			left:0;
+			margin-left:126px;
+			margin-top:4px;
+			height:340px;
+			background-color:rgb(234,234,234);
+		}
+		.box-scroll .place {
+			font-size:16px;
+			font-weight:bold;
+			margin-top:10px;
+		}
+		.box-scroll .place:last-child {
+			margin-bottom:40px;
+		}
+		.ss-wrapper {
+			padding-left:1px;
+		}
+		.ss-scroll {
+			display:block!important;
+			transform:translate3d(0,4px,0);
+			width:4px!important;
+			opacity:1.0!important;
+			border-radius:0;
+			border-right:4px solid transparent!important;
+			background-color:rgb(217,171,107);
+		}
+		.blur-white {
+			background-image:url('https://www.tiongnam.com/assets/img/blur-white.png');
+			background-size:auto 100%;
+			background-position:bottom;
+			width:250px;
+			height:60px;
+			margin-left:10px;
+			position:absolute;
+			bottom:56px;
+			z-index:100;
+		}
+		@media screen and (max-width: 1400px) {
+			.box-desc:nth-child(odd) {
+				/*padding-left:80px!important;*/
+			}
+			.box-scroll::before {
+				margin-left:86px;
+			}
+			.box-desc br {
+				display:none;
+			}
+		}
+		@media screen and (max-width: 1200px) {
+			
+		}
+		@media screen and (max-width: 600px) {
+			.services, .zm-m7 {
+				zoom:0.7;
+			}
+			.services .box-desc {
+				padding:40px 30px 60px!important;
+			}
+			.box-scroll::before {
+				margin-left:36px;
+			}
+			.carousel .item .img-cover .vcenter br {
+				display:none;
+			}
+			.img-cover {
+				position:static!important;
+				margin-bottom:60px;
+			}
+			.box-sp {
+				font-size:24px!important;
+				padding:30px!important;
+				line-height:1.2!important;
+				display:block;
+			}
+			.services {
+				padding:0;
+			}
+		}
+		</style>
+	</head>
+	<body class="top-navigation body-small">
+		<div id="wrapper">
+			<div id="page-wrapper" class="white-bg">
+				
+<div class="row border-bottom bgcolor-primary" style="box-shadow:0 4px 10px 0 #bbb; border-bottom:none!important">
+	<div class="deco-line bgcolor-forth"></div>
+	<div class="deco-line bgcolor-tertiary"></div>
+	<div class="deco-line bgcolor-secondary"></div>
+	<nav class="navbar navbar-static-top" role="navigation" style="height:90px; max-width:1600px; margin:0 auto">
+			<div class="navbar-header bgcolor-primary">
+					<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<i class="fa fa-reorder"></i>
+					</button>
+					<a href="https://www.tiongnam.com/" class="navbar-brand" style="height:90px; background:transparent">
+						<img src="https://www.tiongnam.com/assets/img/logo2.png" style="height:40px; margin-top:10px">
+					</a>
+			</div>
+			<div class="navbar-collapse collapse bgcolor-primary" id="navbar">
+					<ul class="nav navbar-nav navbar-right" style="margin-top:40px">
+							<li class="active">
+									<a href="https://www.tiongnam.com/">Home</a>
+							</li>
+							<li class="dropdown ">
+									<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+									<ul role="menu" class="dropdown-menu" style="transform: translate3d(49.0938px, 0px, 0px);">
+											<li class=""><a href="https://www.tiongnam.com/aboutus/ourstory">Our Story</a></li>
+											<!--li class=""><a href="https://www.tiongnam.com/aboutus/ourpeople">Our People</a></li-->
+											<li class=""><a href="https://www.tiongnam.com/aboutus/ourpride">Our Pride</a></li>
+											<!--<li class=""><a href="https://www.tiongnam.com/aboutus/investor">Investment Relations</a></li>-->
+											<!--li><a target="_blank" href="https://www.tiongnam.com/assets/Enviromental Policy.pdf">Environmental Policy</a></li>
+											<li><a target="_blank" href="https://www.tiongnam.com/assets/TN  2018 -2019 Environmental Performance Goals vs Actual achievement.pdf">Environmental Performance Goals vs Actual achievement</a></li-->
+											
+									</ul>
+							</li>
+							<li class="dropdown ">
+									<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">Our Services</a>
+									<ul role="menu" class="dropdown-menu" style="transform: translate3d(39.4062px, 0px, 0px);">
+											<li class=""><a href="https://www.tiongnam.com/services/total_ls">Total Logistics Solutions</a></li>
+											<li class=""><a href="https://www.tiongnam.com/services/specific_s">Specific Solutions</a></li>
+									</ul>
+							</li>
+							<li class="">
+									<a href="https://www.tiongnam.com/network">Our Network</a>
+							</li>
+
+							<li class="dropdown ">
+									
+									<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">Investor Relations</a>
+									<ul role="menu" class="dropdown-menu" style="transform: translate3d(19.2266px, 0px, 0px);">
+
+										<li class=""><a href="https://www.tiongnam.com/investor/investorrelations">Investor Relations</a></li>
+										<li class=""><a href="https://www.tiongnam.com/investor/corporategovernance">Corporate Governance</a></li>
+										<li class=""><a href="https://www.tiongnam.com/investor/financialannual">Financial Information</a></li>
+											<!-- <li class="dropdown">
+												<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">Financial Information</a>
+												<ul role="menu" class="dropdown-menu submenu">
+													<li class=""><a href="https://www.tiongnam.com/investor/financialannual">Annual Reports</a></li>
+													<li class=""><a href="https://www.tiongnam.com/investor/financialquarterly">Quaterly Reports</a></li>
+													<li class=""><a href="https://www.tiongnam.com/investor/circulars">Circulars</a></li>
+												</ul>
+											</li> -->
+
+										<li class=""><a href="https://www.tiongnam.com/investor/announcement">Announcements</a></li>
+										<li><a href="https://www.tiongnam.com/index.php/investor/certifications">Certifications</a></li>
+
+									</ul>
+							</li>
+
+							<li class="">
+									<a href="https://www.tiongnam.com/careers">Careers</a>
+							</li>
+							<li class="">
+									<a href="https://www.tiongnam.com/contactus">Contact Us</a>
+							</li>
+					</ul>  
+			</div>
+	</nav>
+</div>				<div class="row">
+					<div class="col-xs-12 no-padding">
+						<div class="carousel owl-carousel owl-theme owl-loaded owl-responsive-0">
+							
+							
+							
+							
+						<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-750px, 0px, 0px); transition: all; width: 3000px;"><div class="owl-item cloned" style="width: 375px; margin-right: 0px;"><div class="item">
+								<img src="https://www.tiongnam.com/assets/img/cold-room.jpg" style="height: 38.5px;">
+								<div class="img-cover zm-m7">
+									<div class="tb-layout">
+										<div class="vcenter">
+											<div class="box-sp">
+												The Largest Cold Room<br>
+												Service Provider<br>
+												In Malaysia
+											</div>
+											<div style="margin-top:-18px; padding-left:120px">
+												<a href="https://www.tiongnam.com/services/specific_s"><button class="more-btn">FIND OUT MORE</button></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div></div><div class="owl-item cloned" style="width: 375px; margin-right: 0px;"><div class="item">
+								<img src="https://www.tiongnam.com/assets/img/Tiongnam_B.jpg" style="height: 38.5px;">
+								<div class="img-cover zm-m7">
+									
+								</div>
+								
+							</div></div><div class="owl-item active" style="width: 375px; margin-right: 0px;"><div class="item">
+								<img class="sp" src="https://www.tiongnam.com/assets/img/landing1.jpg" style="height: 38.5px;">
+								<div class="img-cover zm-m7">
+									<div class="tb-layout">
+										<div class="vcenter">
+											<div class="box-sp">
+												Total Logistics<br>
+												Service Provider<br>
+												Across ASEAN
+											</div>
+											<div style="margin-top:-18px; padding-left:120px">
+												<a href="https://www.tiongnam.com/services/total_ls"><button class="more-btn">FIND OUT MORE</button></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div></div><div class="owl-item" style="width: 375px; margin-right: 0px;"><div class="item">
+								<img src="https://www.tiongnam.com/assets/img/landing2.jpg" style="height: 38.5px;">
+								<div class="img-cover zm-m7">
+									<div class="tb-layout">
+										<div class="vcenter">
+											<div class="box-sp">
+												Your Trusted <br>
+												Total Logistics <br>
+												Service Provider
+											</div>
+											<div style="margin-top:-18px; padding-left:120px">
+												<a href="https://www.tiongnam.com/services/specific_s"><button class="more-btn">FIND OUT MORE</button></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div></div><div class="owl-item" style="width: 375px; margin-right: 0px;"><div class="item">
+								<img src="https://www.tiongnam.com/assets/img/cold-room.jpg" style="height: 38.5px;">
+								<div class="img-cover zm-m7">
+									<div class="tb-layout">
+										<div class="vcenter">
+											<div class="box-sp">
+												The Largest Cold Room<br>
+												Service Provider<br>
+												In Malaysia
+											</div>
+											<div style="margin-top:-18px; padding-left:120px">
+												<a href="https://www.tiongnam.com/services/specific_s"><button class="more-btn">FIND OUT MORE</button></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div></div><div class="owl-item" style="width: 375px; margin-right: 0px;"><div class="item">
+								<img src="https://www.tiongnam.com/assets/img/Tiongnam_B.jpg" style="height: 38.5px;">
+								<div class="img-cover zm-m7">
+									
+								</div>
+								
+							</div></div><div class="owl-item cloned" style="width: 375px; margin-right: 0px;"><div class="item">
+								<img class="sp" src="https://www.tiongnam.com/assets/img/landing1.jpg" style="height: 38.5px;">
+								<div class="img-cover zm-m7">
+									<div class="tb-layout">
+										<div class="vcenter">
+											<div class="box-sp">
+												Total Logistics<br>
+												Service Provider<br>
+												Across ASEAN
+											</div>
+											<div style="margin-top:-18px; padding-left:120px">
+												<a href="https://www.tiongnam.com/services/total_ls"><button class="more-btn">FIND OUT MORE</button></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div></div><div class="owl-item cloned" style="width: 375px; margin-right: 0px;"><div class="item">
+								<img src="https://www.tiongnam.com/assets/img/landing2.jpg" style="height: 38.5px;">
+								<div class="img-cover zm-m7">
+									<div class="tb-layout">
+										<div class="vcenter">
+											<div class="box-sp">
+												Your Trusted <br>
+												Total Logistics <br>
+												Service Provider
+											</div>
+											<div style="margin-top:-18px; padding-left:120px">
+												<a href="https://www.tiongnam.com/services/specific_s"><button class="more-btn">FIND OUT MORE</button></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+					</div>
+				</div>
+				<div class="row services">
+					<div class="col-xs-12 col-sm-6 col-md-6 box-img" style="height: 216.828px;">
+						<img src="https://www.tiongnam.com/assets/img/service-1.png">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 box-desc" id="svc2-box" style="padding-right: 30px; height: auto;">
+						<div class="title-1">Our Services</div>
+						<div class="title-2">
+							<span class="square-box"></span>
+							Total Logistics Solutions
+						</div>
+						<div class="desc">
+							With an extensive regional network of 79 facilities in 7 countries,
+							Tiong Nam offers comprehensive logistics solutions, be it domestic
+							trucking or a fully integrated 3PL solution.
+						</div>
+						<a href="https://www.tiongnam.com/services/total_ls"><button class="more-btn">LEARN MORE</button></a>
+					</div>
+				</div>
+				<div class="row services">
+					<div class="col-xs-12 col-sm-6 col-md-6 box-desc bgcolor-white" id="svc-box" style="padding-left: 30px; height: auto;">
+						<div class="title-1">Our Services</div>
+						<div class="title-2">
+							<span class="square-box"></span>
+							Specific Solutions
+						</div>
+						<div class="desc bg">
+							With extensive experience in the industry, Tiong Nam caters to
+							specific and specialised needs that your business may have, and
+							develops customised solutions for them, eg. Bonded/ FCZ
+							warehouses, Courier Services, Cold Chain, and Project Cargo.
+						</div>
+						<a href="https://www.tiongnam.com/services/specific_s"><button class="more-btn">LEARN MORE</button></a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 box-img" style="height: 230.266px;">
+						<img src="https://www.tiongnam.com/assets/img/service-2.jpg">
+					</div>
+				</div>
+				<div class="row services">
+					<div class="col-xs-12 col-sm-6 col-md-6 box-img" style="height: 230.266px;">
+						<img src="https://www.tiongnam.com/assets/img/service-3.jpg">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 box-desc" id="svc3-box" style="padding-right: 30px; height: auto;">
+						<div class="title-1">Our Services</div>
+						<div class="title-2">
+							<span class="square-box"></span>
+							Property
+						</div>
+						<div class="desc">
+							Our portfolio includes the development of commercial, industrial,
+							and residential properties. Our complementary business sectors
+							often mean that our clients intersect across our logistics and
+							property portfolio, and also allows us to create flexible solutions.
+						</div>
+						<button class="more-btn">LEARN MORE</button>
+					</div>
+				</div>
+				<!--div class="row services" style="zoom:1">
+					<div class="col-xs-12 col-sm-6 col-md-4 box-desc bgcolor-white">
+						<div class="zm-m7">
+							<div class="title-1">Our Network</div>
+							<div class="title-2" style="margin-bottom:10px">
+								<span class="square-box"></span>
+								Tiong Nam’s<br> Headquarters<br> &amp; Branches
+							</div>
+						</div>
+						<div class="box-scroll ftcolor-secondary">
+							<div class="scroll-track"></div>
+							<div class="place" style="display:inline-block; margin-top:0; padding-bottom:2px; border-bottom:4px solid rgb(220,128,0)">
+							Tiong Nam Headquarters</div>
+							<div style="margin-top:10px">Lot 30462, Jalan Kempas Baru, 81200<br> Johor Bahru, Johor, Malaysia</div>
+							<div style="margin:10px 0 15px">
+								<b>Tel</b> + 607 232 1299<br class="constant">
+								<b>Fax</b> + 607 236 1299<br class="constant">
+							</div>
+							<div class="place">Tiong Nam Singapore</div>
+							<div class="place">Tiong Nam Batu Pahat</div>
+							<div class="place">Tiong Nam Melaka</div>
+							<div class="place">Tiong Nam Shah Alam</div>
+							<div class="place">Tiong Nam Port Klang</div>
+							<div class="place">Tiong Nam Kuantan</div>
+							<div class="place">Tiong Nam Singapore</div>
+							<div class="place">Tiong Nam Batu Pahat</div>
+							<div class="place">Tiong Nam Melaka</div>
+							<div class="place">Tiong Nam Shah Alam</div>
+							<div class="place">Tiong Nam Port Klang</div>
+							<div class="place">Tiong Nam Kuantan</div>
+						</div>
+						<div class="blur-white"></div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-8 box-img no-padding bgcolor-primary">
+						
+					</div>
+				</div-->
+				
+				<div id="footer" class="bgcolor-secondary row">
+	<div class="row">
+		<!--div class="pull-right">
+			10GB of <strong>250GB</strong> Free.
+		</div>
+		<div>
+			<strong>Copyright</strong> Example Company &copy; 2014-2017
+		</div-->
+		<div class="col-xs-12 col-sm-3" style="padding-bottom:20px">
+			<div style="max-width:280px">
+			<div class="title">About Us</div>
+				As one of the largest total logistics service
+				providers in the Asia-Pacific region, we have
+				forged a proud reputation for efficiency,
+				innovation and service par excellence.
+				Embracing integration has been key to our
+				success, enabling us to grow from a mere
+				transportation business to one that provides
+				total logistics solutions, including
+				warehousing, customs brokerage, cold room
+				facilities, express delivery as well as crane
+				and heavy transport services.
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-3 text-center" style="padding-bottom:20px">
+			<div class="box-center">
+			<div class="title">TN Headquarters</div>	
+				Lot 30462, Jalan<br>
+				Kempas Baru, 81200<br>
+				Johor Bahru, Johor,<br>
+				Malaysia<br><br>
+				Tel <a href="tel:607 232 1299" style="line-height:1.2">+607 232 1299</a><br>
+				Fax <a href="tel:607 236 1299" style="line-height:1.2">+607 236 1299</a><br>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-3 text-center" style="padding-bottom:20px">
+			<div class="box-center">
+			<div class="title">Quick Links</div>
+				<a href="https://www.tiongnam.com/aboutus/ourstory">About Us</a><br>
+				<a href="https://www.tiongnam.com/services/total_ls">Our Services</a><br>
+				<a href="https://www.tiongnam.com/network">Our Network</a><br>
+				<a href="https://www.tiongnam.com/careers">Careers</a><br>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-3 text-center" style="padding-bottom:20px">
+			<div class="box-center contactus">
+			<div class="title">Contact Us</div>
+				<a href="https://www.tiongnam.com/contactus#1">Request For Quotation</a><br>
+				<a href="https://www.tiongnam.com/contactus#2">Tender Invitation</a><br>
+				<a href="https://www.tiongnam.com/contactus#3">Feedback/complaints</a><br>
+				<a href="https://www.tiongnam.com/contactus#4">Employment Opportunities</a><br>
+				<a href="https://www.tiongnam.com/contactus#5">General Enquiry</a><br>
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div style="height:2px; background-color:#fff; width:calc(100% - 60px); display:inline-block; vertical-align:bottom"></div><!--
+			--><button class="back-to-top"><span class="ion-ios-arrow-up" style="font-size:30px"></span></button>
+			<div class="row" style="margin-top:16px">
+				<div class="col-xs-12 col-sm-9" style="font-family:'open sans'; font-size:12px">
+					All Rights Reserved. © 2026 Tiong Nam Logistics Holdings Berhad (Co. Reg. No. 198901005177 (182485-V))
+				</div>
+				<div class="col-xs-12 col-sm-9" style="font-family:'open sans'; font-size:12px">
+					Main Operator (a wholly owned subsidiary): Tiong Nam Logistics Solutions Sdn Bhd (Co. Reg. No. 197801006799 (0043831-V))
+				</div>
+				<div class="col-xs-12 col-sm-3 text-right">
+					<a href="https://www.tiongnam.com/policy/introduction" style="font-size:12px; padding-right:60px"><b>Privacy Policy</b></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12 no-padding">
+		<div class="deco-line bgcolor-forth"></div>
+		<div class="deco-line bgcolor-tertiary"></div>
+		<div class="deco-line bgcolor-secondary"></div>
+	</div>
+</div>			</div>
+		</div>
+		<script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/TnA7HacJFoDyljdc3L82L3Rh/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-BzR1KsTgQlBYM6f2zBvowklwbhqpOnnspbOTaQKeAnJ5VVF0uPvnM53ZW+Z2zTQd"></script><script>var base_url = 'https://www.tiongnam.com/';</script>
+<script src="https://www.tiongnam.com/assets/js/jquery-3.1.1.min.js"></script>
+<script src="https://www.tiongnam.com/assets/js/bootstrap.min.js"></script>
+<script src="https://www.tiongnam.com/assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="https://www.tiongnam.com/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="https://www.tiongnam.com/assets/plugins/datatables/datatables.min.js"></script>
+<script src="https://www.tiongnam.com/assets/plugins/owl.carousel.2/js/owl.carousel.min.js"></script>
+<script src="https://www.tiongnam.com/assets/plugins/custom-scrollbar/simple-scrollbar.js"></script>
+<script src="https://www.tiongnam.com/assets/plugins/select2/select2.full.min.js"></script>
+<script src="https://www.tiongnam.com/assets/plugins/wow/wow.min.js"></script>
+<script src="https://www.tiongnam.com/assets/js/inspinia.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+$(function() {
+	// Patch animation reset problem
+	setTimeout(function() { 
+		$('.wrapper-content').removeClass('animated'); 
+	}, 1000);
+
+	$('ul.dropdown-menu').each(function() {
+		var tl = $(this).parent().innerWidth()-$(this).width();
+		$(this).css('transform', 'translate3d('+(-tl/2)+'px,0,0)')
+	});
+	
+	wow = new WOW(
+		{
+		boxClass:     'wow',      // default
+		animateClass: 'animated', // default
+		offset:       100,          // default
+		mobile:       true,       // default
+		live:         true        // default
+	}).init();
+});
+</script>		<script>
+		$.fn.andSelf = function() {
+			return this.addBack.apply(this, arguments);
+		}
+		$(function() {
+			/*
+			var el = document.querySelector('.box-scroll');
+			SimpleScrollbar.initEl(el);*/
+			
+			$('.carousel').owlCarousel({
+				loop:true,
+				smartSpeed: 0,
+				responsiveClass:true,
+				responsive:{
+					0:{
+							items:1,
+							nav:false
+					},
+					480:{
+							items:1,
+							nav:false
+					}
+				}
+			});
+			
+			if ($(window).width()<=600) {
+				$('#svc-box').parent().append($('#svc-box'));
+			}
+			
+			$(window).on('resize', function() {
+				
+				$('#svc-box').css('padding-left', $('#footer>.row>div:eq(0)').offset().left + 15 + 'px');
+				$('#svc2-box, #svc3-box').css('padding-right', $('#footer>.row>div:eq(0)').offset().left + 15 + 'px');
+				
+				var iw = $(this).width();
+				var mar = 1080 - $(this).height() < 120 ? 1080 - $(this).height() : 0;
+				var ext = $(this).width() > 480 ? 108 : 62;
+				$('.item img').css('height', iw * 0.5625 - ext - mar + 'px');
+				
+				$('.services').each(function() {
+					$(this).find('.box-desc').css('height', 'auto');
+					var dh = $(this).find('.box-desc').outerHeight();
+					$(this).find('.box-img').css('height', dh + 'px');
+				});
+			
+			}).trigger('resize');
+		});
+		</script>
+	
+<div class="theme-config">
+    <div class="theme-config-box">
+        <div class="spin-icon">
+            <i class="fa fa-cogs fa-spin"></i>
+        </div>
+        <div class="skin-settings">
+            <div class="title">Configuration <br>
+            <small style="text-transform: none;font-weight: 400">
+                Config box designed for demo purpose. All options available via code.
+            </small></div>
+            <div class="setings-item">
+                    <span>
+                        Collapse menu
+                    </span>
+
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="collapsemenu">
+                        <label class="onoffswitch-label" for="collapsemenu">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setings-item">
+                    <span>
+                        Fixed sidebar
+                    </span>
+
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="fixedsidebar" class="onoffswitch-checkbox" id="fixedsidebar">
+                        <label class="onoffswitch-label" for="fixedsidebar">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setings-item">
+                    <span>
+                        Top navbar
+                    </span>
+
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="fixednavbar" class="onoffswitch-checkbox" id="fixednavbar">
+                        <label class="onoffswitch-label" for="fixednavbar">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setings-item">
+                    <span>
+                        Top navbar v.2
+                        <br>
+                        <small>*Primary layout</small>
+                    </span>
+
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="fixednavbar2" class="onoffswitch-checkbox" id="fixednavbar2">
+                        <label class="onoffswitch-label" for="fixednavbar2">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setings-item">
+                    <span>
+                        Boxed layout
+                    </span>
+
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="boxedlayout" class="onoffswitch-checkbox" id="boxedlayout">
+                        <label class="onoffswitch-label" for="boxedlayout">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setings-item">
+                    <span>
+                        Fixed footer
+                    </span>
+
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="fixedfooter" class="onoffswitch-checkbox" id="fixedfooter">
+                        <label class="onoffswitch-label" for="fixedfooter">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title">Skins</div>
+            <div class="setings-item default-skin">
+                    <span class="skin-name ">
+                         <a href="#" class="s-skin-0">
+                             Default
+                         </a>
+                    </span>
+            </div>
+            <div class="setings-item blue-skin">
+                    <span class="skin-name ">
+                        <a href="#" class="s-skin-1">
+                            Blue light
+                        </a>
+                    </span>
+            </div>
+            <div class="setings-item yellow-skin">
+                    <span class="skin-name ">
+                        <a href="#" class="s-skin-3">
+                            Yellow/Purple
+                        </a>
+                    </span>
+            </div>
+            <div class="setings-item ultra-skin">
+                    <span class="skin-name ">
+                        <a href="md-skin.html" class="md-skin">
+                            Material Design
+                        </a>
+                    </span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // Config box
+
+    // Enable/disable fixed top navbar
+    $('#fixednavbar').click(function (){
+        if ($('#fixednavbar').is(':checked')){
+            $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
+            $("body").removeClass('boxed-layout');
+            $("body").addClass('fixed-nav');
+            $('#boxedlayout').prop('checked', false);
+
+            if (localStorageSupport){
+                localStorage.setItem("boxedlayout",'off');
+            }
+
+            if (localStorageSupport){
+                localStorage.setItem("fixednavbar",'on');
+            }
+        } else{
+            $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+            $("body").removeClass('fixed-nav');
+            $("body").removeClass('fixed-nav-basic');
+            $('#fixednavbar2').prop('checked', false);
+
+            if (localStorageSupport){
+                localStorage.setItem("fixednavbar",'off');
+            }
+
+            if (localStorageSupport){
+                localStorage.setItem("fixednavbar2",'off');
+            }
+        }
+    });
+
+    // Enable/disable fixed top navbar
+    $('#fixednavbar2').click(function (){
+        if ($('#fixednavbar2').is(':checked')){
+            $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
+            $("body").removeClass('boxed-layout');
+            $("body").addClass('fixed-nav').addClass('fixed-nav-basic');
+            $('#boxedlayout').prop('checked', false);
+
+            if (localStorageSupport){
+                localStorage.setItem("boxedlayout",'off');
+            }
+
+            if (localStorageSupport){
+                localStorage.setItem("fixednavbar2",'on');
+            }
+        } else {
+            $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+            $("body").removeClass('fixed-nav').removeClass('fixed-nav-basic');
+            $('#fixednavbar').prop('checked', false);
+
+            if (localStorageSupport){
+                localStorage.setItem("fixednavbar2",'off');
+            }
+            if (localStorageSupport){
+                localStorage.setItem("fixednavbar",'off');
+            }
+        }
+    });
+
+    // Enable/disable fixed sidebar
+    $('#fixedsidebar').click(function (){
+        if ($('#fixedsidebar').is(':checked')){
+            $("body").addClass('fixed-sidebar');
+            $('.sidebar-collapse').slimScroll({
+                height: '100%',
+                railOpacity: 0.9
+            });
+
+            if (localStorageSupport){
+                localStorage.setItem("fixedsidebar",'on');
+            }
+        } else{
+            $('.sidebar-collapse').slimscroll({destroy: true});
+            $('.sidebar-collapse').attr('style', '');
+            $("body").removeClass('fixed-sidebar');
+
+            if (localStorageSupport){
+                localStorage.setItem("fixedsidebar",'off');
+            }
+        }
+    });
+
+    // Enable/disable collapse menu
+    $('#collapsemenu').click(function (){
+        if ($('#collapsemenu').is(':checked')){
+            $("body").addClass('mini-navbar');
+            SmoothlyMenu();
+
+            if (localStorageSupport){
+                localStorage.setItem("collapse_menu",'on');
+            }
+
+        } else{
+            $("body").removeClass('mini-navbar');
+            SmoothlyMenu();
+
+            if (localStorageSupport){
+                localStorage.setItem("collapse_menu",'off');
+            }
+        }
+    });
+
+    // Enable/disable boxed layout
+    $('#boxedlayout').click(function (){
+        if ($('#boxedlayout').is(':checked')){
+            $("body").addClass('boxed-layout');
+            $('#fixednavbar').prop('checked', false);
+            $('#fixednavbar2').prop('checked', false);
+            $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+            $("body").removeClass('fixed-nav');
+            $("body").removeClass('fixed-nav-basic');
+            $(".footer").removeClass('fixed');
+            $('#fixedfooter').prop('checked', false);
+
+            if (localStorageSupport){
+                localStorage.setItem("fixednavbar",'off');
+            }
+
+            if (localStorageSupport){
+                localStorage.setItem("fixednavbar2",'off');
+            }
+
+            if (localStorageSupport){
+                localStorage.setItem("fixedfooter",'off');
+            }
+
+
+            if (localStorageSupport){
+                localStorage.setItem("boxedlayout",'on');
+            }
+        } else{
+            $("body").removeClass('boxed-layout');
+
+            if (localStorageSupport){
+                localStorage.setItem("boxedlayout",'off');
+            }
+        }
+    });
+
+    // Enable/disable fixed footer
+    $('#fixedfooter').click(function (){
+        if ($('#fixedfooter').is(':checked')){
+            $('#boxedlayout').prop('checked', false);
+            $("body").removeClass('boxed-layout');
+            $(".footer").addClass('fixed');
+
+            if (localStorageSupport){
+                localStorage.setItem("boxedlayout",'off');
+            }
+
+            if (localStorageSupport){
+                localStorage.setItem("fixedfooter",'on');
+            }
+        } else{
+            $(".footer").removeClass('fixed');
+
+            if (localStorageSupport){
+                localStorage.setItem("fixedfooter",'off');
+            }
+        }
+    });
+
+    // SKIN Select
+    $('.spin-icon').click(function (){
+        $(".theme-config-box").toggleClass("show");
+    });
+
+    // Default skin
+    $('.s-skin-0').click(function (){
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+    });
+
+    // Blue skin
+    $('.s-skin-1').click(function (){
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+        $("body").addClass("skin-1");
+    });
+
+    // Inspinia ultra skin
+    $('.s-skin-2').click(function (){
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-3");
+        $("body").addClass("skin-2");
+    });
+
+    // Yellow skin
+    $('.s-skin-3').click(function (){
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").addClass("skin-3");
+    });
+
+    if (localStorageSupport){
+        var collapse = localStorage.getItem("collapse_menu");
+        var fixedsidebar = localStorage.getItem("fixedsidebar");
+        var fixednavbar = localStorage.getItem("fixednavbar");
+        var fixednavbar2 = localStorage.getItem("fixednavbar2");
+        var boxedlayout = localStorage.getItem("boxedlayout");
+        var fixedfooter = localStorage.getItem("fixedfooter");
+
+        if (collapse == 'on'){
+            $('#collapsemenu').prop('checked','checked')
+        }
+        if (fixedsidebar == 'on'){
+            $('#fixedsidebar').prop('checked','checked')
+        }
+        if (fixednavbar == 'on'){
+            $('#fixednavbar').prop('checked','checked')
+        }
+        if (fixednavbar2 == 'on'){
+            $('#fixednavbar2').prop('checked','checked')
+        }
+        if (boxedlayout == 'on'){
+            $('#boxedlayout').prop('checked','checked')
+        }
+        if (fixedfooter == 'on') {
+            $('#fixedfooter').prop('checked','checked')
+        }
+    }
+</script></body></html>
